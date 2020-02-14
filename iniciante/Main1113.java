@@ -11,8 +11,8 @@ public class Main1113{
 		repeticao:while(true){
 			int a=sc.nextInt(),b=sc.nextInt();
 			if(a==b)break repeticao;
-			else if(a<b)out.println("crescente");
-			else out.println("decrescente");
+			else if(a<b)out.println("Crescente");
+			else out.println("Decrescente");
 		}
 	}
 
