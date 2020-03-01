@@ -1,0 +1,23 @@
+import java.util.Scanner;
+import java.io.PrintStream;
+
+public class Main1146{
+        private static Scanner sc;
+        private static PrintStream ps;
+        static{
+                sc=new Scanner(System.in);
+                ps=System.out;
+        }
+        public static void main(String... args){
+                int x;
+                while(true){
+                        x=sc.nextInt();
+                        if(x==0)break;
+                        for(int i=1;i<=x;i++){ 
+                                ps.print(i);
+                                if(i<x)ps.print(" ");
+                                else ps.println();
+                        }       
+                } 
+        }
+}
