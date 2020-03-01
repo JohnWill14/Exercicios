@@ -13,11 +13,11 @@ public class Main1146{
                 while(true){
                         x=sc.nextInt();
                         if(x==0)break;
-                        for(int i=1;i<=x;i++){ 
-                                ps.print(i);
-                                if(i<x)ps.print(" ");
-                                else ps.println();
-                        }       
-                } 
-        }
-}
+                        StringBuffer sb=new StringBuffer();   
+                        for(int i=1;i<x;i++){
+                                sb.append(new Integer(i).toString());
+                                sb.append(" ");
+                        
+                        }
+                        ps.println(sb.toString()+x);
+                }
