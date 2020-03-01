@@ -1,0 +1,23 @@
+import java.util.Scanner;
+import java.io.PrintStream;
+public class Main1154{
+	private static Scanner sc;
+	private static PrintStream ps;
+	static{
+		sc=new Scanner(System.in);
+		ps=System.out;
+	}
+	public static void main(String... args){
+		int n;
+		int count=0,soma=0;
+		while(true){
+			n=sc.nextInt();
+			if(n<0)break;
+			count+=1;
+			soma+=n;	
+		}
+		double media=soma/(count*1.0);
+		ps.println(String.format("%.2f",media));
+		
+	}
+}
