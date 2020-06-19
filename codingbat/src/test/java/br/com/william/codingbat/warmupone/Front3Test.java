@@ -30,6 +30,7 @@ public class Front3Test {
         assertEquals("JavJavJav", front3.front3("Java"));
         assertEquals("ChoChoCho", front3.front3("Chocolate"));
         assertEquals("abcabcabc", front3.front3("abc"));
+        assertEquals("ababab", front3.front3("ab"));
     }
     
 }

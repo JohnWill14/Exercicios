@@ -13,7 +13,12 @@ package br.com.william.codingbat.warmupone;
  */
 public class Front3 {
     public String front3(String str) {
-        String test=str.substring(0, 3);
+        if(str.equals(""))return str;
+        int cont=3;
+        while(cont>str.length()){
+            cont--;
+        }
+        String test=str.substring(0, cont);
         String str2="";
         for(int i=0;i<3;i++)
             str2+=test;
